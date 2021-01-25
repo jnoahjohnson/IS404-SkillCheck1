@@ -2,4 +2,11 @@ version: 0.1
 os: linux
 files:
   - source: /
-    destination: /var/www/html/
+    destination: /var/www/html/parcel
+
+hooks:
+
+  # The lifecycle hooks sections allows you to specify deployment scripts.
+
+Install:
+  - location: ./scripts/install.sh
