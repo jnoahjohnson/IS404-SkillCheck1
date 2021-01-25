@@ -2,11 +2,9 @@ version: 0.1
 os: linux
 files:
   - source: /
-    destination: /var/www/html/parcel
+    destination: /var/www/html
 
 hooks:
-
-  # The lifecycle hooks sections allows you to specify deployment scripts.
-
-Install:
-  - location: ./scripts/install.sh
+  ApplicationStart:
+    location: ./scripts/install.sh
+    timeout: 3600
