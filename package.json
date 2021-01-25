@@ -1,0 +1,15 @@
+{
+  "name": "IS404-SkillCheck1",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/jnoahjohnson/IS404-SkillCheck1.git",
+  "author": "Noah Johnson <jnoahjohnson@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4"
+  },
+  "scripts": {
+    "dev": "parcel <your entry file>",
+    "build": "parcel build <your entry file>"
+  }
+}
