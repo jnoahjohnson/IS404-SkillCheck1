@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Extra</title>
+    <link rel="stylesheet" href="../styles/main.css" />
+  </head>
+  <body>
+    <h1>Extra</h1>
+    <p>
+      For the extra part of the assignment I was excited to see if I could use
+      AWS and GitHub to have a CI/CD pipeline. I was able to implement this so
+      that when I push any code changes then the pipeline transfers over the
+      files to the server into the directory to then server them. This let me
+      learn a lot about other services that AWS has.
+    </p>
+    <p>
+      I had to learn about IAM roles, users, and policies inside of AWS. These
+      allowed me to give permissions to use some of the other AWS services and
+      to tie them together. I used Code Pipeline to watch for changes from the
+      GitHub repository. Then, when a change is pushed, it sends a trigger to
+      CodeDeploy. That service then is setup with a policy to allow it to grab
+      the code from the GitHub repo and transfer it into the var/www/html
+      directory.
+    </p>
+    <p>
+      I set up this pipeline just with static files to keep it simple, but did
+      try many options to get it to work. I tried initially to use
+      <a href="https://parceljs.org">Parcel</a> to bundle up all the files,
+      though that would have taken more configuration on the server side which
+      would be interesting to look into in the future, but I was running into a
+      lot of issues so I went back to just the static files. It was interesting
+      to also see what tests could be done on AWS with applications that you
+      deploy. I have deployed to different services in the past, but they
+      usually didn't have as much configuration so it was intersting to see how
+      they most likely work behind the scenes.
+    </p>
+    <p>
+      My future goal with this information would be to put a static site
+      generator on the server so that I could write markdown files on my
+      computer, push them to GitHub, and then they generate a website that I can
+      view. I am implementing a similar idea for a portfolio and blog site so
+      that I can write up what we are working on in class and outside on
+      personal projects.
+    </p>
+  </body>
+</html>

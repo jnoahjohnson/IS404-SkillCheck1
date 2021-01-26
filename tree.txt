@@ -1,0 +1,17 @@
+html
+├── README.md
+├── appspec.yml
+├── img
+│   ├── extra.png
+│   ├── king-oil.jpeg
+│   ├── korin-noah.jpeg
+│   ├── me.png
+│   └── tree.png
+├── index.html
+├── pages
+│   ├── about-me.html
+│   └── extra.html
+└── styles
+    └── main.css
+
+3 directories, 11 files
