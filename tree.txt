@@ -12,6 +12,6 @@ html
 │   ├── about-me.html
 │   └── extra.html
 └── styles
-    └── main.css
+    └── style.css
 
 3 directories, 11 files
